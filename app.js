@@ -1,80 +1,78 @@
-// 假設資料已經從伺服器取得，這是遊戲的題目資料
-const questions = [
-  {
-    "item": "鄭成功是台灣歷史上哪一位開台英雄？",
-    "correct": "鄭成功",
-    "wrong": ["劉銘傳", "施琅"]
-  },
-  {
-    "item": "誰是台灣第一位本土出生的總統？",
-    "correct": "李登輝",
-    "wrong": ["蔣經國", "馬英九"]
-  },
-  {
-    "item": "蔣經國擔任台灣總統的時間是從何時開始？",
-    "correct": "1978年",
-    "wrong": ["1988年", "1975年"]
-  },
-  {
-    "item": "台灣史上誰成功實施了土地改革？",
-    "correct": "陳誠",
-    "wrong": ["鄭南榕", "吳國楨"]
-  },
-  {
-    "item": "誰是台灣最早推動三民主義的國父？",
-    "correct": "孫中山",
-    "wrong": ["蔣中正", "馮玉祥"]
-  }
-  // 加入更多問題
-];
+const express = require('express');
+const MongoClient = require('mongodb').MongoClient;
+const path = require('path');
 
-let currentQuestionIndex = 0;
-let shuffledAnswers = [];
-let score = 0;
+const app = express();
+const port = 3000;
 
-function loadQuestion() {
-  const currentQuestion = questions[currentQuestionIndex];
-  document.getElementById('question').textContent = currentQuestion.item;
-  
-  // 將正確答案和錯誤答案混合
-  shuffledAnswers = [...currentQuestion.wrong, currentQuestion.correct];
-  shuffledAnswers.sort(() => Math.random() - 0.5);
-  
-  // 更新選項文字
-  const buttons = document.getElementsByClassName('answer-btn');
-  for (let i = 0; i < buttons.length; i++) {
-    buttons[i].textContent = shuffledAnswers[i];
-  }
-  
-  document.getElementById('result').textContent = '';
-  document.getElementById('next-btn').style.display = 'none';
-}
+const url = "mongodb://player:kg$1234@ks.hopeit.com.tw:27017";
+const dbName = 'kgamedb'; // 請確保這是正確的資料庫名稱
 
-function selectAnswer(index) {
-  const currentQuestion = questions[currentQuestionIndex];
-  const resultElement = document.getElementById('result');
-  if (shuffledAnswers[index] === currentQuestion.correct) {
-    resultElement.textContent = '答對了！';
-    score++;
-  } else {
-    resultElement.textContent = `答錯了，正確答案是：${currentQuestion.correct}`;
-  }
-  document.getElementById('next-btn').style.display = 'block';
-}
+let questions = [];
+let db;
 
-function nextQuestion() {
-  currentQuestionIndex++;
-  if (currentQuestionIndex < questions.length) {
-    loadQuestion();
-  } else {
-    endGame();
+app.use(express.static('public'));
+app.use(express.json());
+
+// 連接到MongoDB並獲取題目
+async function connectToMongoDB() {
+  try {
+    const client = await MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
+    console.log("成功連接到MongoDB");
+    
+    db = client.db(dbName);
+    const collection = db.collection('items');
+    
+    questions = await collection.find({}).toArray();
+    console.log(`成功從MongoDB獲取 ${questions.length} 個題目`);
+  } catch (err) {
+    console.error("連接MongoDB時出錯:", err);
   }
 }
 
-function endGame() {
-  document.getElementById('question-box').style.display = 'none';
-  document.getElementById('result').textContent = `遊戲結束！你得到了 ${score}/${questions.length} 分！`;
-}
+app.get('/questions', (req, res) => {
+  res.json(questions);
+});
 
-// 初始化遊戲
-loadQuestion();
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+// 獲取排行榜
+app.get('/leaderboard', async (req, res) => {
+  try {
+    const leaderboard = await db.collection('leaderboard').find().sort({score: -1}).limit(5).toArray();
+    res.json(leaderboard);
+  } catch (error) {
+    console.error("獲取排行榜時出錯:", error);
+    res.status(500).json({error: "獲取排行榜時出錯"});
+  }
+});
+
+// 添加新的排行榜記錄
+app.post('/leaderboard', async (req, res) => {
+  try {
+    const { name, score } = req.body;
+    if (!name || typeof score !== 'number') {
+      return res.status(400).json({ error: "無效的名字或分數" });
+    }
+    const newRecord = { name, score, date: new Date() };
+    await db.collection('leaderboard').insertOne(newRecord);
+    
+    // 保持只有前5名記錄
+    const leaderboard = await db.collection('leaderboard').find().sort({score: -1}).limit(6).toArray();
+    if (leaderboard.length > 5) {
+      await db.collection('leaderboard').deleteOne({_id: leaderboard[5]._id});
+    }
+    
+    res.status(201).json({message: "成功添加到排行榜"});
+  } catch (error) {
+    console.error("添加排行榜記錄時出錯:", error);
+    res.status(500).json({error: "添加排行榜記錄時出錯"});
+  }
+});
+
+app.listen(port, () => {
+  console.log(`服務器運行在 http://localhost:${port}`);
+  connectToMongoDB();
+});

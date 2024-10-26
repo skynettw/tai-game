@@ -1,0 +1,123 @@
+[
+    {
+      "item": "誰是美國第一任總統？",
+      "correct": "喬治·華盛頓",
+      "wrong": ["亞伯拉罕·林肯", "富蘭克林·羅斯福"],
+      "category": "history"
+    },
+    {
+      "item": "誰發現了萬有引力定律？",
+      "correct": "艾薩克·牛頓",
+      "wrong": ["伽利略", "愛因斯坦"],
+      "category": "history"
+    },
+    {
+      "item": "誰是法國大革命中的重要領導人物？",
+      "correct": "羅伯斯庇爾",
+      "wrong": ["拿破崙", "查理十世"],
+      "category": "history"
+    },
+    {
+      "item": "誰是第二次世界大戰中納粹德國的領袖？",
+      "correct": "阿道夫·希特勒",
+      "wrong": ["溫斯頓·邱吉爾", "約瑟夫·斯大林"],
+      "category": "history"
+    },
+    {
+      "item": "誰是印度獨立運動的領袖，提倡非暴力抗爭？",
+      "correct": "甘地",
+      "wrong": ["尼赫魯", "賈瓦哈拉爾·尼赫魯"],
+      "category": "history"
+    },
+    {
+      "item": "誰是日本在明治維新時期的重要人物之一？",
+      "correct": "西鄉隆盛",
+      "wrong": ["德川家康", "豐臣秀吉"],
+      "category": "history"
+    },
+    {
+      "item": "誰在二戰期間是美國的總統？",
+      "correct": "富蘭克林·羅斯福",
+      "wrong": ["哈利·杜魯門", "德懷特·艾森豪"],
+      "category": "history"
+    },
+    {
+      "item": "誰是羅馬帝國的第一位皇帝？",
+      "correct": "奧古斯都",
+      "wrong": ["尤利烏斯·凱撒", "尼祿"],
+      "category": "history"
+    },
+    {
+      "item": "誰是蘇聯的創建者並領導十月革命？",
+      "correct": "列寧",
+      "wrong": ["托洛茨基", "斯大林"],
+      "category": "history"
+    },
+    {
+      "item": "誰是美國獨立戰爭中的主要軍事指揮官？",
+      "correct": "喬治·華盛頓",
+      "wrong": ["本傑明·富蘭克林", "湯瑪斯·傑佛遜"],
+      "category": "history"
+    },
+    {
+      "item": "誰是統一德國的關鍵人物，後來成為德國首相？",
+      "correct": "奧托·馮·俾斯麥",
+      "wrong": ["威廉一世", "腓特烈二世"],
+      "category": "history"
+    },
+    {
+      "item": "誰是古埃及女王，與羅馬的凱撒和安東尼有聯繫？",
+      "correct": "克麗奧佩特拉",
+      "wrong": ["尼菲蒂蒂", "哈特謝普蘇特"],
+      "category": "history"
+    },
+    {
+      "item": "誰是英國歷史上唯一一位女性首相？",
+      "correct": "瑪格麗特·柴契爾",
+      "wrong": ["伊麗莎白一世", "特蕾莎·梅"],
+      "category": "history"
+    },
+    {
+      "item": "誰是現代德國的創建者並推動統一？",
+      "correct": "奧托·馮·俾斯麥",
+      "wrong": ["威廉一世", "弗朗茲·約瑟夫"],
+      "category": "history"
+    },
+    {
+      "item": "誰是蒙哥馬利元帥，著名於北非戰場？",
+      "correct": "伯納德·蒙哥馬利",
+      "wrong": ["喬治·巴頓", "道格拉斯·麥克阿瑟"],
+      "category": "history"
+    },
+    {
+      "item": "誰在滑鐵盧戰役中擊敗了拿破崙？",
+      "correct": "威靈頓公爵",
+      "wrong": ["喬治·巴頓", "霍雷肖·納爾遜"],
+      "category": "history"
+    },
+    {
+      "item": "誰被稱為“鐵娘子”，是冷戰時期的重要政治人物？",
+      "correct": "瑪格麗特·柴契爾",
+      "wrong": ["安吉拉·默克爾", "溫斯頓·邱吉爾"],
+      "category": "history"
+    },
+    {
+      "item": "誰是美國獨立宣言的主要作者？",
+      "correct": "湯瑪斯·傑佛遜",
+      "wrong": ["約翰·亞當斯", "詹姆斯·麥迪遜"],
+      "category": "history"
+    },
+    {
+      "item": "誰是法國大革命的象徵性人物，被稱為“人權宣言”起草者之一？",
+      "correct": "羅伯斯庇爾",
+      "wrong": ["馬拉", "丹東"],
+      "category": "history"
+    },
+    {
+      "item": "誰是第一位獲得諾貝爾和平獎的美國總統？",
+      "correct": "西奧多·羅斯福",
+      "wrong": ["伍德羅·威爾遜", "富蘭克林·羅斯福"],
+      "category": "history"
+    }
+  ]
+  
