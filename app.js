@@ -52,23 +52,29 @@ app.get('/leaderboard', async (req, res) => {
 // 添加新的排行榜記錄
 app.post('/leaderboard', async (req, res) => {
   try {
+    console.log('收到排行榜提交請求:', req.body);
     const { name, score } = req.body;
     if (!name || typeof score !== 'number') {
+      console.log('無效的輸入數據:', { name, score });
       return res.status(400).json({ error: "無效的名字或分數" });
     }
     const newRecord = { name, score, date: new Date() };
-    await db.collection('leaderboard').insertOne(newRecord);
+    console.log('正在插入新記錄:', newRecord);
+    const insertResult = await db.collection('leaderboard').insertOne(newRecord);
+    console.log('插入結果:', insertResult);
     
     // 保持只有前5名記錄
     const leaderboard = await db.collection('leaderboard').find().sort({score: -1}).limit(6).toArray();
+    console.log('當前排行榜:', leaderboard);
     if (leaderboard.length > 5) {
-      await db.collection('leaderboard').deleteOne({_id: leaderboard[5]._id});
+      const deleteResult = await db.collection('leaderboard').deleteOne({_id: leaderboard[5]._id});
+      console.log('刪除結果:', deleteResult);
     }
     
     res.status(201).json({message: "成功添加到排行榜"});
   } catch (error) {
     console.error("添加排行榜記錄時出錯:", error);
-    res.status(500).json({error: "添加排行榜記錄時出錯"});
+    res.status(500).json({error: "添加排行榜記錄時出錯: " + error.message});
   }
 });
 
