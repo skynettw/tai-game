@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const MongoClient = require('mongodb').MongoClient;
 const path = require('path');
@@ -5,8 +6,8 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
-const url = "mongodb://player:kg$1234@ks.hopeit.com.tw:27017";
-const dbName = 'kgamedb'; // 請確保這是正確的資料庫名稱
+const url = process.env.MONGO_URL;
+const dbName = process.env.DB_NAME; // 請確保這是正確的資料庫名稱
 
 let questions = [];
 let db;
