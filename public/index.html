@@ -48,16 +48,20 @@
             margin-top: 20px;
         }
         .leaderboard-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .question-counter {
+            text-align: center;
+            color: #6c757d;
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
     <div class="container position-relative">
         <!-- 添加排行榜按鈕 -->
-        <button id="leaderboardBtn" class="btn btn-info leaderboard-btn" onclick="toggleLeaderboard()">
+        <button id="leaderboardBtn" class="btn btn-info leaderboard-btn w-100" onclick="toggleLeaderboard()">
             <i class="fas fa-trophy"></i> 排行榜
         </button>
 
@@ -69,6 +73,10 @@
                     <i class="fas fa-heart life-icon"></i>
                 </div>
                 <div class="col-6" id="score-display">分數：<span id="score">0</span></div>
+            </div>
+            <!-- 添加題目計數器 -->
+            <div class="question-counter">
+                第 <span id="currentQuestionNumber">1</span> 題 / 共 <span id="totalQuestions">0</span> 題
             </div>
             <div id="question-box">
                 <h2 id="question" class="mb-4"></h2>
@@ -129,6 +137,8 @@
             try {
                 const response = await fetch('/questions');
                 questions = await response.json();
+                // 設置總題數
+                document.getElementById('totalQuestions').textContent = questions.length;
                 shuffleQuestions();
                 loadQuestion();
             } catch (error) {
@@ -148,6 +158,9 @@
                 console.error("沒有可用的題目");
                 return;
             }
+            
+            // 更新題目計數器
+            document.getElementById('currentQuestionNumber').textContent = currentQuestionIndex + 1;
             
             const currentQuestion = questions[currentQuestionIndex];
             document.getElementById('question').textContent = currentQuestion.item;

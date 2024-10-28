@@ -1,0 +1,314 @@
+[
+  {
+    "item": "誰是印度獨立運動的精神領袖？",
+    "correct": "甘地",
+    "wrong": ["尼赫魯", "帕特爾"],
+    "category": "history"
+  },
+  {
+    "item": "誰是南非反種族隔離運動的領袖？",
+    "correct": "納爾遜·曼德拉",
+    "wrong": ["德克勒克", "圖圖大主教"],
+    "category": "history"
+  },
+  {
+    "item": "誰是古埃及統一上下埃及的法老？",
+    "correct": "美尼斯",
+    "wrong": ["拉美西斯二世", "圖特摩斯三世"],
+    "category": "history"
+  },
+  {
+    "item": "誰是法國啟蒙運動時期的重要思想家？",
+    "correct": "伏爾泰",
+    "wrong": ["盧梭", "孟德斯鳩"],
+    "category": "history"
+  },
+  {
+    "item": "誰是古羅馬共和國末期的重要改革家？",
+    "correct": "蓋烏斯·格拉古",
+    "wrong": ["提比略·格拉古", "蘇拉"],
+    "category": "history"
+  },
+  {
+    "item": "誰是德國統一運動的重要推動者？",
+    "correct": "俾斯麥",
+    "wrong": ["威廉一世", "毛奇"],
+    "category": "history"
+  },
+  {
+    "item": "誰是俄國十月革命的領袖？",
+    "correct": "列寧",
+    "wrong": ["托洛茨基", "季諾維也夫"],
+    "category": "history"
+  },
+  {
+    "item": "誰是義大利統一運動的英雄？",
+    "correct": "加里波第",
+    "wrong": ["馬志尼", "加富爾"],
+    "category": "history"
+  },
+  {
+    "item": "誰是古希臘雅典民主制度的奠基人？",
+    "correct": "梭倫",
+    "wrong": ["伯里克利", "克里斯提尼"],
+    "category": "history"
+  },
+  {
+    "item": "誰是中國春秋時期齊國的改革家？",
+    "correct": "管仲",
+    "wrong": ["晏嬰", "鮑叔牙"],
+    "category": "history"
+  },
+  {
+    "item": "誰是古代波斯帝國的開國君主？",
+    "correct": "居魯士大帝",
+    "wrong": ["大流士一世", "薛西斯一世"],
+    "category": "history"
+  },
+  {
+    "item": "誰是拜占庭帝國最著名的皇帝？",
+    "correct": "查士丁尼一世",
+    "wrong": ["狄奧多西一世", "赫拉克略一世"],
+    "category": "history"
+  },
+  {
+    "item": "誰是蒙古帝國的創建者？",
+    "correct": "成吉思汗",
+    "wrong": ["忽必烈", "窩闊台"],
+    "category": "history"
+  },
+  {
+    "item": "誰是阿拉伯帝國的創建者？",
+    "correct": "穆罕默德",
+    "wrong": ["阿布伯克爾", "歐麥爾"],
+    "category": "history"
+  },
+  {
+    "item": "誰是西班牙統一運動的推動者？",
+    "correct": "費迪南德與伊莎貝拉",
+    "wrong": ["查理五世", "菲利普二世"],
+    "category": "history"
+  },
+  {
+    "item": "誰是英國光榮革命的領導者？",
+    "correct": "威廉三世",
+    "wrong": ["詹姆斯二世", "查理二世"],
+    "category": "history"
+  },
+  {
+    "item": "誰是美國南北戰爭時期的南方領袖？",
+    "correct": "傑弗遜·戴維斯",
+    "wrong": ["羅伯特·李", "斯通沃爾·傑克遜"],
+    "category": "history"
+  },
+  {
+    "item": "誰是日本幕末時期的重要改革家？",
+    "correct": "坂本龍馬",
+    "wrong": ["高杉晉作", "勝海舟"],
+    "category": "history"
+  },
+  {
+    "item": "誰是古代印度孔雀王朝的創建者？",
+    "correct": "旃陀羅笈多",
+    "wrong": ["阿育王", "賓頭盧王"],
+    "category": "history"
+  },
+  {
+    "item": "誰是法國大革命時期的重要政治家？",
+    "correct": "羅伯斯庇爾",
+    "wrong": ["丹東", "馬拉"],
+    "category": "history"
+  },
+  {
+    "item": "誰是俄羅斯現代化改革的推動者？",
+    "correct": "彼得大帝",
+    "wrong": ["葉卡捷琳娜二世", "亞歷山大一世"],
+    "category": "history"
+  },
+  {
+    "item": "誰是中國戰國時期的改革家？",
+    "correct": "商鞅",
+    "wrong": ["李斯", "韓非"],
+    "category": "history"
+  },
+  {
+    "item": "誰是古代希臘斯巴達最著名的將軍？",
+    "correct": "列奧尼達斯一世",
+    "wrong": ["布拉西達斯", "利桑德"],
+    "category": "history"
+  },
+  {
+    "item": "誰是英國工業革命時期的紡織業革新者？",
+    "correct": "詹姆斯·哈格里夫斯",
+    "wrong": ["理查德·阿克萊特", "薩繆爾·克倫普頓"],
+    "category": "history"
+  },
+  {
+    "item": "誰是美國進步主義運動的重要領袖？",
+    "correct": "西奧多·羅斯福",
+    "wrong": ["威廉·塔夫脫", "伍德羅·威爾遜"],
+    "category": "history"
+  },
+  {
+    "item": "誰是中國抗日戰爭時期的著名將領？",
+    "correct": "張自忠",
+    "wrong": ["佟麟閣", "趙登禹"],
+    "category": "history"
+  },
+  {
+    "item": "誰是古代羅馬帝國最後一位有能力的皇帝？",
+    "correct": "查士丁尼大帝",
+    "wrong": ["狄奧克里先", "康斯坦丁大帝"],
+    "category": "history"
+  },
+  {
+    "item": "誰是英國文藝復興時期的重要思想家？",
+    "correct": "托馬斯·莫爾",
+    "wrong": ["培根", "霍布斯"],
+    "category": "history"
+  },
+  {
+    "item": "誰是墨西哥獨立運動的領袖？",
+    "correct": "伊達爾戈神父",
+    "wrong": ["莫雷洛斯", "格雷羅"],
+    "category": "history"
+  },
+  {
+    "item": "誰是日本明治維新時期的軍事改革家？",
+    "correct": "山縣有朋",
+    "wrong": ["大村益次郎", "西鄉隆盛"],
+    "category": "history"
+  },
+  {
+    "item": "誰是古代亞述帝國的最後一位大帝？",
+    "correct": "亞述巴尼拔",
+    "wrong": ["薩爾貢二世", "辛那赫里布"],
+    "category": "history"
+  },
+  {
+    "item": "誰是英國清教徒革命的領袖？",
+    "correct": "克倫威爾",
+    "wrong": ["約翰·派姆", "約翰·漢普登"],
+    "category": "history"
+  },
+  {
+    "item": "誰是美國獨立戰爭時期的重要將領？",
+    "correct": "喬治·華盛頓",
+    "wrong": ["納撒尼爾·格林", "霍雷肖·蓋茨"],
+    "category": "history"
+  },
+  {
+    "item": "誰是中國五四運動的重要領袖？",
+    "correct": "陳獨秀",
+    "wrong": ["李大釗", "胡適"],
+    "category": "history"
+  },
+  {
+    "item": "誰是古代迦太基最著名的將軍？",
+    "correct": "漢尼拔",
+    "wrong": ["哈米爾卡·巴卡", "哈斯德魯巴爾"],
+    "category": "history"
+  },
+  {
+    "item": "誰是英國航海時代的重要探險家？",
+    "correct": "法蘭西斯·德雷克",
+    "wrong": ["沃爾特·羅利", "約翰·霍金斯"],
+    "category": "history"
+  },
+  {
+    "item": "誰是巴西獨立運動的領袖？",
+    "correct": "佩德羅一世",
+    "wrong": ["若澤·博尼法西奧", "蒂拉登特斯"],
+    "category": "history"
+  },
+  {
+    "item": "誰是中國戊戌變法時期的重要人物？",
+    "correct": "康有為",
+    "wrong": ["梁啟超", "譚嗣同"],
+    "category": "history"
+  },
+  {
+    "item": "誰是古代波斯帝國最有作為的君主？",
+    "correct": "大流士一世",
+    "wrong": ["薛西斯一世", "阿塔薛西斯一世"],
+    "category": "history"
+  },
+  {
+    "item": "誰是德國納粹時期的重要抵抗者？",
+    "correct": "施陶芬貝格",
+    "wrong": ["戈爾德勒", "貝克"],
+    "category": "history"
+  },
+  {
+    "item": "誰是古代埃及新王國時期最偉大的法老？",
+    "correct": "拉美西斯二世",
+    "wrong": ["圖特摩斯三世", "阿蒙霍特普三世"],
+    "category": "history"
+  },
+  {
+    "item": "誰是法國七月革命的領袖？",
+    "correct": "拉法耶特",
+    "wrong": ["塔列朗", "基佐"],
+    "category": "history"
+  },
+  {
+    "item": "誰是中國近代史上洋務運動的重要推動者？",
+    "correct": "李鴻章",
+    "wrong": ["左宗棠", "張之洞"],
+    "category": "history"
+  },
+  {
+    "item": "誰是古代希臘亞歷山大帝國的繼承者？",
+    "correct": "托勒密一世",
+    "wrong": ["塞琉古一世", "安提柯一世"],
+    "category": "history"
+  },
+  {
+    "item": "誰是英國工業革命時期的重要經濟學家？",
+    "correct": "亞當·斯密",
+    "wrong": ["大衛·李嘉圖", "托馬斯·馬爾薩斯"],
+    "category": "history"
+  },
+  {
+    "item": "誰是中國辛亥革命的重要領袖？",
+    "correct": "孫中山",
+    "wrong": ["黃興", "宋教仁"],
+    "category": "history"
+  },
+  {
+    "item": "誰是古代羅馬共和國的重要改革家？",
+    "correct": "蓋烏斯·馬略",
+    "wrong": ["蘇拉", "龐貝"],
+    "category": "history"
+  },
+  {
+    "item": "誰是德國三十年戰爭時期的重要將領？",
+    "correct": "華倫斯坦",
+    "wrong": ["提利", "古斯塔夫·阿道夫"],
+    "category": "history"
+  },
+  {
+    "item": "誰是美國南北戰爭時期的北方將領？",
+    "correct": "尤利西斯·格蘭特",
+    "wrong": ["威廉·謝爾曼", "喬治·米德"],
+    "category": "history"
+  },
+  {
+    "item": "誰是日本德川幕府的創建者？",
+    "correct": "德川家康",
+    "wrong": ["豐臣秀吉", "織田信長"],
+    "category": "history"
+  },
+  {
+    "item": "誰是古代印度笈多王朝的重要君主？",
+    "correct": "月護王",
+    "wrong": ["旃陀羅笈多二世", "鳩摩羅笈多一世"],
+    "category": "history"
+  },
+  {
+    "item": "誰是法國大革命時期的重要將領？",
+    "correct": "拿破崙·波拿巴",
+    "wrong": ["莫羅", "馬塞納"],
+    "category": "history"
+  }
+]
