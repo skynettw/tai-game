@@ -1,0 +1,254 @@
+[
+  {
+    "item": "誰是古埃及統一上下埃及的第一位法老？",
+    "correct": "美尼斯",
+    "wrong": ["圖特摩斯三世", "拉美西斯二世"],
+    "category": "history"
+  },
+  {
+    "item": "誰是英國都鐸王朝的開創者？",
+    "correct": "亨利七世",
+    "wrong": ["亨利八世", "愛德華六世"],
+    "category": "history"
+  },
+  {
+    "item": "誰是中國漢朝的開國皇帝？",
+    "correct": "劉邦",
+    "wrong": ["項羽", "呂后"],
+    "category": "history"
+  },
+  {
+    "item": "誰是俄國革命後的第一位領導人？",
+    "correct": "列寧",
+    "wrong": ["托洛茨基", "季諾維也夫"],
+    "category": "history"
+  },
+  {
+    "item": "誰是印度獨立運動的精神領袖？",
+    "correct": "聖雄甘地",
+    "wrong": ["尼赫魯", "帕特爾"],
+    "category": "history"
+  },
+  {
+    "item": "誰是法國大革命時期的重要人物，被稱為'不可分割共和國'的支持者？",
+    "correct": "羅伯斯庇爾",
+    "wrong": ["丹東", "馬拉"],
+    "category": "history"
+  },
+  {
+    "item": "誰是義大利統一運動中的重要政治家，被稱為'義大利統一之父'？",
+    "correct": "加富爾",
+    "wrong": ["馬志尼", "維托里奧·埃馬努埃萊二世"],
+    "category": "history"
+  },
+  {
+    "item": "誰是美國獨立戰爭時期的第一任總司令？",
+    "correct": "喬治·華盛頓",
+    "wrong": ["本傑明·富蘭克林", "托馬斯·傑佛遜"],
+    "category": "history"
+  },
+  {
+    "item": "誰是德國統一運動的重要推手，被稱為'鐵血宰相'？",
+    "correct": "俾斯麥",
+    "wrong": ["威廉一世", "威廉二世"],
+    "category": "history"
+  },
+  {
+    "item": "誰是古希臘亞歷山大大帝的父親？",
+    "correct": "腓力二世",
+    "wrong": ["安提帕特", "托勒密一世"],
+    "category": "history"
+  },
+  {
+    "item": "誰是波斯帝國的居魯士大帝？",
+    "correct": "居魯士二世",
+    "wrong": ["大流士一世", "薛西斯一世"],
+    "category": "history"
+  },
+  {
+    "item": "誰是唐朝開國皇帝？",
+    "correct": "李淵",
+    "wrong": ["李世民", "李治"],
+    "category": "history"
+  },
+  {
+    "item": "誰是宋朝的開國皇帝？",
+    "correct": "趙匡胤",
+    "wrong": ["趙光義", "趙德昭"],
+    "category": "history"
+  },
+  {
+    "item": "誰是元朝的開國皇帝？",
+    "correct": "忽必烈",
+    "wrong": ["成吉思汗", "窩闊台"],
+    "category": "history"
+  },
+  {
+    "item": "誰是明朝的開國皇帝？",
+    "correct": "朱元璋",
+    "wrong": ["朱棣", "朱允炆"],
+    "category": "history"
+  },
+  {
+    "item": "誰是清朝的開國皇帝？",
+    "correct": "努爾哈赤",
+    "wrong": ["皇太極", "順治"],
+    "category": "history"
+  },
+  {
+    "item": "誰是挪威探險家，首位到達南極點的人？",
+    "correct": "羅爾德·阿蒙森",
+    "wrong": ["羅伯特·斯科特", "歐內斯特·沙克爾頓"],
+    "category": "history"
+  },
+  {
+    "item": "誰是第一次世界大戰後德國的第一位總統？",
+    "correct": "弗里德里希·艾伯特",
+    "wrong": ["保羅·馮·興登堡", "古斯塔夫·施特雷澤曼"],
+    "category": "history"
+  },
+  {
+    "item": "誰是古羅馬帝國時期的重要史學家？",
+    "correct": "塔西佗",
+    "wrong": ["李維", "蘇埃托尼烏斯"],
+    "category": "history"
+  },
+  {
+    "item": "誰是荷蘭獨立戰爭的領袖？",
+    "correct": "威廉一世",
+    "wrong": ["威廉三世", "莫里茨親王"],
+    "category": "history"
+  },
+  {
+    "item": "誰是英國工業革命時期發明蒸汽火車的人？",
+    "correct": "喬治·史蒂芬森",
+    "wrong": ["詹姆斯·瓦特", "理查德·特雷維西克"],
+    "category": "history"
+  },
+  {
+    "item": "誰是中國近代史上第一位女醫學博士？",
+    "correct": "金韻梅",
+    "wrong": ["林巧稚", "吳貽芳"],
+    "category": "history"
+  },
+  {
+    "item": "誰是歐洲啟蒙運動時期的重要思想家，著有《社會契約論》？",
+    "correct": "盧梭",
+    "wrong": ["伏爾泰", "孟德斯鳩"],
+    "category": "history"
+  },
+  {
+    "item": "誰是美國南北戰爭時期的北方統帥？",
+    "correct": "尤利西斯·格蘭特",
+    "wrong": ["羅伯特·李", "威廉·謝爾曼"],
+    "category": "history"
+  },
+  {
+    "item": "誰是日本戰國時代統一日本的第一人？",
+    "correct": "織田信長",
+    "wrong": ["豐臣秀吉", "德川家康"],
+    "category": "history"
+  },
+  {
+    "item": "誰是中國五四運動的重要領袖之一？",
+    "correct": "陳獨秀",
+    "wrong": ["李大釗", "胡適"],
+    "category": "history"
+  },
+  {
+    "item": "誰是第二次世界大戰後的日本首相，推動日本經濟復興？",
+    "correct": "吉田茂",
+    "wrong": ["岸信介", "池田勇人"],
+    "category": "history"
+  },
+  {
+    "item": "誰是西班牙內戰後的獨裁統治者？",
+    "correct": "佛朗哥",
+    "wrong": ["普里莫·德·里維拉", "薩莫拉"],
+    "category": "history"
+  },
+  {
+    "item": "誰是英國工業革命時期發明紡織機的人？",
+    "correct": "詹姆斯·哈格里夫斯",
+    "wrong": ["理查德·阿克萊特", "塞繆爾·克朗普頓"],
+    "category": "history"
+  },
+  {
+    "item": "誰是中國春秋時期的著名思想家？",
+    "correct": "孔子",
+    "wrong": ["孟子", "荀子"],
+    "category": "history"
+  },
+  {
+    "item": "誰是古羅馬帝國時期的重要將領，征服高盧？",
+    "correct": "尤利烏斯·凱撒",
+    "wrong": ["龐培", "安東尼"],
+    "category": "history"
+  },
+  {
+    "item": "誰是英國工業革命時期的經濟學家，著有《國富論》？",
+    "correct": "亞當·斯密",
+    "wrong": ["大衛·李嘉圖", "托馬斯·馬爾薩斯"],
+    "category": "history"
+  },
+  {
+    "item": "誰是法國啟蒙運動時期的重要思想家，著有《法的精神》？",
+    "correct": "孟德斯鳩",
+    "wrong": ["伏爾泰", "盧梭"],
+    "category": "history"
+  },
+  {
+    "item": "誰是中國戰國時期的著名軍事家？",
+    "correct": "孫臏",
+    "wrong": ["吳起", "龐涓"],
+    "category": "history"
+  },
+  {
+    "item": "誰是古希臘時期的著名歷史學家？",
+    "correct": "希羅多德",
+    "wrong": ["修昔底德", "波利比烏斯"],
+    "category": "history"
+  },
+  {
+    "item": "誰是美國獨立宣言的主要起草人？",
+    "correct": "托馬斯·傑佛遜",
+    "wrong": ["本傑明·富蘭克林", "約翰·亞當斯"],
+    "category": "history"
+  },
+  {
+    "item": "誰是英國工業革命時期的重要發明家，發明了螺絲切割機？",
+    "correct": "亨利·莫茲利",
+    "wrong": ["理查德·羅伯茨", "約瑟夫·布拉瑪"],
+    "category": "history"
+  },
+  {
+    "item": "誰是中國戰國時期的著名思想家，主張兼愛非攻？",
+    "correct": "墨子",
+    "wrong": ["莊子", "韓非子"],
+    "category": "history"
+  },
+  {
+    "item": "誰是古羅馬共和國末期的重要政治家，組建第一次三巨頭？",
+    "correct": "龐培",
+    "wrong": ["克拉蘇", "凱撒"],
+    "category": "history"
+  },
+  {
+    "item": "誰是英國工業革命時期的重要發明家，發明了蒸汽鍋爐？",
+    "correct": "托馬斯·紐科門",
+    "wrong": ["詹姆斯·瓦特", "理查德·特雷維西克"],
+    "category": "history"
+  },
+  {
+    "item": "誰是美國獨立戰爭時期的重要將領，被稱為'西點軍校之父'？",
+    "correct": "塞迪斯·索耶",
+    "wrong": ["納撒尼爾·格林", "亨利·諾克斯"],
+    "category": "history"
+  },
+  {
+    "item": "誰是中國三國時期的著名軍事家，著有《孫子兵法》？",
+    "correct": "孫武",
+    "wrong": ["諸葛亮", "周瑜"],
+    "category": "history"
+  }
+]
