@@ -60,10 +60,12 @@
 </head>
 <body>
     <div class="container position-relative">
-        <!-- 添加排行榜按鈕 -->
+        <!-- 排行榜按鈕 -->
         <button id="leaderboardBtn" class="btn btn-info leaderboard-btn w-100" onclick="toggleLeaderboard()">
             <i class="fas fa-trophy"></i> 排行榜
         </button>
+        <!-- 將計數器移到這裡並移除 d-none 類 -->
+        <p class="text-center text-muted mb-3">累計參與遊戲人次：<span id="visitorCount">0</span></p>
 
         <div class="quiz-container">
             <div class="row">
@@ -90,7 +92,7 @@
             <button id="next-btn" class="btn btn-success d-none w-100 mt-3" onclick="nextQuestion()">下一題</button>
             <button id="restart-btn" class="btn btn-primary d-none w-100 mt-3" onclick="restartGame()">重新開始遊戲</button>
             
-            <!-- 添加排行榜 -->
+            <!-- 修改排行榜部分，移除計數器 -->
             <div id="leaderboard" class="d-none">
                 <h3>排行榜</h3>
                 <table class="table">
@@ -234,6 +236,9 @@
             document.getElementById('next-btn').classList.add('d-none');
             document.getElementById('restart-btn').classList.remove('d-none');
             
+            // 更新訪客計數
+            await incrementVisitorCount();
+            
             // 檢查是否進入排行榜
             const leaderboard = await fetchLeaderboard();
             if (leaderboard.length < 5 || score > leaderboard[leaderboard.length - 1].score) {
@@ -325,7 +330,13 @@
             loadQuestion();
         }
 
-        // 新增：切換排行榜顯示
+        // 修改：在頁面加載時就獲取計數
+        async function initializeGame() {
+            await fetchQuestions();
+            await fetchVisitorCount(); // 立即獲取並顯示計數
+        }
+
+        // 修改：切換排行榜顯示
         async function toggleLeaderboard() {
             const leaderboardDiv = document.getElementById('leaderboard');
             if (leaderboardDiv.classList.contains('d-none')) {
@@ -336,8 +347,35 @@
             }
         }
 
+        // 獲取訪客計數
+        async function fetchVisitorCount() {
+            try {
+                const response = await fetch('/counter');
+                const data = await response.json();
+                document.getElementById('visitorCount').textContent = data.count;
+            } catch (error) {
+                console.error('獲取訪客計數時出錯:', error);
+            }
+        }
+
+        // 更新訪客計數
+        async function incrementVisitorCount() {
+            try {
+                const response = await fetch('/counter/increment', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                });
+                const data = await response.json();
+                document.getElementById('visitorCount').textContent = data.count;
+            } catch (error) {
+                console.error('更新訪客計數時出錯:', error);
+            }
+        }
+
         // 初始化遊戲
-        fetchQuestions();
+        initializeGame();
     </script>
 </body>
 </html>

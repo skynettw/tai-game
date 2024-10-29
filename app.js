@@ -6,8 +6,8 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
-const url = process.env.MONGO_URL;
-const dbName = process.env.DB_NAME; // 請確保這是正確的資料庫名稱
+const url = "mongodb://player:kg$1234@ks.hopeit.com.tw:27017";
+const dbName = 'kgamedb';
 
 let questions = [];
 let db;
@@ -26,6 +26,12 @@ async function connectToMongoDB() {
     
     questions = await collection.find({}).toArray();
     console.log(`成功從MongoDB獲取 ${questions.length} 個題目`);
+
+    // 確保counter collection存在並有初始值
+    const counter = await db.collection('counter').findOne({ _id: 'visitors' });
+    if (!counter) {
+      await db.collection('counter').insertOne({ _id: 'visitors', count: 0 });
+    }
   } catch (err) {
     console.error("連接MongoDB時出錯:", err);
   }
@@ -76,6 +82,33 @@ app.post('/leaderboard', async (req, res) => {
   } catch (error) {
     console.error("添加排行榜記錄時出錯:", error);
     res.status(500).json({error: "添加排行榜記錄時出錯: " + error.message});
+  }
+});
+
+// 獲取訪客計數
+app.get('/counter', async (req, res) => {
+  try {
+    const counter = await db.collection('counter').findOne({ _id: 'visitors' });
+    res.json({ count: counter ? counter.count : 0 });
+  } catch (error) {
+    console.error("獲取計數時出錯:", error);
+    res.status(500).json({ error: "獲取計數時出錯" });
+  }
+});
+
+// 更新訪客計數
+app.post('/counter/increment', async (req, res) => {
+  try {
+    const result = await db.collection('counter').updateOne(
+      { _id: 'visitors' },
+      { $inc: { count: 1 } },
+      { upsert: true }
+    );
+    const counter = await db.collection('counter').findOne({ _id: 'visitors' });
+    res.json({ count: counter.count });
+  } catch (error) {
+    console.error("更新計數時出錯:", error);
+    res.status(500).json({ error: "更新計數時出錯" });
   }
 });
 
